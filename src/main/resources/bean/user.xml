@@ -13,7 +13,7 @@
     </select>
     <!-- 根据id获得用户对象 -->
     <select id="queryById" resultMap="userTest">
-        select * from t_user where id=#id#
+        select * from t_user where id=#id#123
     </select>
 
 </sqlMap>
