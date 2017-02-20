@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap >
+    <typeAlias type="com.raycloud.newtest.entity.User" alias="user"/>
+    <resultMap id="userTest" class="user" >
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+    </resultMap>
+    <!-- 根据用户名获得用户对象 -->
+    <select id="queryByName" resultMap="userTest">
+        select * from t_user where name=#name#
+    </select>
+    <!-- 根据id获得用户对象 -->
+    <select id="queryById" resultMap="userTest">
+        select * from t_user where id=#id#
+    </select>
+
+</sqlMap>
