@@ -7,7 +7,7 @@
         <result column="name" property="name"  />
         <result column="password" property="password"  />
     </resultMap>
-    <!-- 根据用户名获得用户对象 第二次修改-->
+    <!-- 根据用户名获得用户对象 第二次修改  第三次修改-->
     <select id="queryByName" resultMap="userTest">
         select * from t_user where name=#name#
     </select>
