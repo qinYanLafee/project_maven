@@ -3,9 +3,9 @@
 <sqlMap >
     <typeAlias type="com.raycloud.newtest.entity.User" alias="user"/>
     <resultMap id="userTest" class="user" >
-        <result column="id" property="id" jdbcType="INTEGER" />
-        <result column="name" property="name" jdbcType="VARCHAR" />
-        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="id" property="id"  />
+        <result column="name" property="name"  />
+        <result column="password" property="password"  />
     </resultMap>
     <!-- 根据用户名获得用户对象 -->
     <select id="queryByName" resultMap="userTest">
