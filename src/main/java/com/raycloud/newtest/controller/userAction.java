@@ -30,7 +30,8 @@ public class userAction {
     }
     @RequestMapping(value="/Listuser",method= RequestMethod.GET)
     public List<User> queryAll(Map<String,Object> map){
-
+        List<User> users=userServiceImp.queryAll();
+        return  users;
     }
 
 
