@@ -11,7 +11,7 @@ public class User {
     private   int      id;/*用户的ID*/
     private   String    name;/*用户的姓名*/
     private   String    password;
-    private   int       age;
+    private   int       age;/*用户年龄的注释*/
 
     public User() {
         super();
