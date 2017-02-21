@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import java.util.List;
 import java.util.Map;
 
 @SessionAttributes(value={"user"})
@@ -26,6 +27,10 @@ public class userAction {
         System.out.println(user);
         map.put("user",user);
         return "list";
+    }
+    @RequestMapping(value="/Listuser",method= RequestMethod.GET)
+    public List<User> queryAll(Map<String,Object> map){
+
     }
 
 
