@@ -34,6 +34,7 @@ public class userAction {
     public List<User> queryAll(Map<String,Object> map){
         List<User> users=userServiceImp.queryAll();
         return  users;
+        /*qinyan*/
     }
 
 
