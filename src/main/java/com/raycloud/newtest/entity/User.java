@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
  * Created by 001117020015 on 2017/2/17.
  */
 @Service()
-/*修改用户的属性，添加age*/
 public class User {
 
     private   int      id;
@@ -25,9 +24,6 @@ public class User {
     }
 
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public String getName() {
         return name;
@@ -59,7 +55,6 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
-                ", age='" + age + '\'' +
                 '}';
     }
     @Override
@@ -72,7 +67,6 @@ public class User {
         if (id != user.id) return false;
         if (name != null ? !name.equals(user.name) : user.name != null) return false;
         if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (age != user.age) return false;
 
         return true;
     }
