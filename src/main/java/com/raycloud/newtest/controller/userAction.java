@@ -19,7 +19,7 @@ public class userAction {
     @Autowired
     private UserServiceImp userServiceImp;
     @RequestMapping(value="/user",method= RequestMethod.GET)
-    public  String  listUser(Map<String,Object> map){
+    public  String  queryById(Map<String,Object> map){
         System.out.println("我是秦延");
         User user=userServiceImp.queryById(2);
         System.out.println("我是秦延1");
@@ -27,6 +27,7 @@ public class userAction {
         map.put("user",user);
         return "list";
     }
+
 
 
 }
