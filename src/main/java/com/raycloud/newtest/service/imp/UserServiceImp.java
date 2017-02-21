@@ -23,5 +23,10 @@ public class UserServiceImp {
         System.out.println("我是秦延");
         return  user;
     };
+    public List<User> queryAll(){
+        List<User> users =userImp.queryAll();
+        System.out.println("我是秦延");
+        return  users;
+    }
 
 }
