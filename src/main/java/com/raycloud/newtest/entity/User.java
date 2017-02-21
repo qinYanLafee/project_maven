@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
  */
 @Service()
 public class User {
+
     private   int      id;
     private   String    name;
     private   String    password;
@@ -21,13 +22,7 @@ public class User {
         this.password = password;
     }
 
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        return result;
-    }
+
 
     public String getName() {
         return name;
@@ -73,6 +68,14 @@ public class User {
         if (password != null ? !password.equals(user.password) : user.password != null) return false;
 
         return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
+        return result;
     }
 
 
