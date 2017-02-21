@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
  * Created by 001117020015 on 2017/2/17.
  */
 @Service()
+/*修改用户的属性，添加age*/
 public class User {
 
     private   int      id;
