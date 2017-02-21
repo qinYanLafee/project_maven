@@ -26,7 +26,8 @@ public class UserImp extends SqlMapClientDaoSupport implements IUserDAO {
     }
     /*查找所有用户*/
     @Override
-    public java.util.List<User> queryAll() {
-        return null;
+    public List<User> queryAll() {
+        List<User> users=getSqlMapClientTemplate().queryForList(null);
+        return  users;
     }
 }
