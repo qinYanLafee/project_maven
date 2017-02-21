@@ -19,6 +19,7 @@ public class userAction {
     @Qualifier(value = "userServiceImp")
     @Autowired
     private UserServiceImp userServiceImp;
+    /*根据ID查询用户*/
     @RequestMapping(value="/user",method= RequestMethod.GET)
     public  String  queryById(Map<String,Object> map){
         System.out.println("我是秦延");
