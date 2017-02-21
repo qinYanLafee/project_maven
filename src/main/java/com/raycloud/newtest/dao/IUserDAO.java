@@ -12,4 +12,6 @@ public interface IUserDAO {
     public User  queryByName(String name);
     /*根据用户ID查找用户*/
     public User  queryById(int id);
+    /*查找所有用户*/
+    public  List<User> queryAll();
 }
