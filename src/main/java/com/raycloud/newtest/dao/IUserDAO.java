@@ -10,5 +10,6 @@ import java.util.List;
 public interface IUserDAO {
     /*根据用户名查找用户*/
     public User  queryByName(String name);
+    /*根据用户ID查找用户*/
     public User  queryById(int id);
 }
