@@ -72,6 +72,7 @@ public class User {
         if (id != user.id) return false;
         if (name != null ? !name.equals(user.name) : user.name != null) return false;
         if (password != null ? !password.equals(user.password) : user.password != null) return false;
+        if (age != user.age) return false;
 
         return true;
     }
