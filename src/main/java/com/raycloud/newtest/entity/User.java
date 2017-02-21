@@ -10,7 +10,7 @@ public class User {
 
     private   int      id;/*用户的ID*/
     private   String    name;/*用户的姓名*/
-    private   String    password;
+    private   String    password;/*用户密码的注释*/
     private   int       age;
 
     public User() {
