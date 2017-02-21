@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service()
 public class User {
 
-    private   int      id;
+    private   int      id;/*用户的ID*/
     private   String    name;
     private   String    password;
     private   int       age;
