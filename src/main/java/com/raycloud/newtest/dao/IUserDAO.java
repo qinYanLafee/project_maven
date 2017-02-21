@@ -8,6 +8,7 @@ import java.util.List;
  * Created by 001117020015 on 2017/2/17.
  */
 public interface IUserDAO {
+    /*根据用户名查找用户*/
     public User  queryByName(String name);
     public User  queryById(int id);
 }
