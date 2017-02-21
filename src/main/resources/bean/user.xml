@@ -11,7 +11,7 @@
     <select id="queryByName" resultMap="userTest">
         select * from t_user where name=#name#
     </select>
-    <!-- 根据id获得用户对象 -->
+    <!-- 根据id获得用户对象 --第4次提交>
     <select id="queryById" resultMap="userTest">
         select * from t_user where id=#id#
     </select>
