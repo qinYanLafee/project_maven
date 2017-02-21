@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class User {
 
     private   int      id;/*用户的ID*/
-    private   String    name;
+    private   String    name;/*用户的姓名*/
     private   String    password;
     private   int       age;
 
