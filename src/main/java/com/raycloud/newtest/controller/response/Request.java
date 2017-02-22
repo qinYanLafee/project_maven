@@ -4,5 +4,5 @@ package com.raycloud.newtest.controller.response;
  */
 public class Request {
 
-
+    private String name;
 }
