@@ -10,5 +10,4 @@ import java.util.List;
 public interface IUserService {
     public User queryById(int id);
     public User queryByName(String  name);
-    public List<User> queryAll();
 }

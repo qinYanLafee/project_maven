@@ -29,14 +29,4 @@ public class userAction {
         map.put("user",user);
         return "list";
     }
-    /*查找所有用户123*/
-    @RequestMapping(value="/Listuser",method= RequestMethod.GET)
-    public List<User> queryAll(Map<String,Object> map){
-        List<User> users=userServiceImp.queryAll();
-        return  users;
-        /*qinyan*/
-    }
-
-
-
 }

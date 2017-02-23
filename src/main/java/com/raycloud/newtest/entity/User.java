@@ -11,13 +11,12 @@ public class User {
     private   int      id;/*用户的ID*/
     private   String    name;/*用户的姓名*/
     private   String    password;
-    private   int       age;
 
     public User() {
         super();
     }
 
-    public User(int id, String name,String passworde) {
+    public User(int id, String name,String password) {
         this.id=id;
         this.name = name;
         this.password = password;
